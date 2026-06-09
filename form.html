@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,21 +20,21 @@
     </nav>
     
 <div class="form-container">
-    <form action="#" id="reservationForm" method="POST" >
+      <form action="#" id="reservationForm" method="POST" >
         
-        <label for="fullName">Full Name:</label>
+        <label for="fullName">Full Name:</label><br>
         <input type="text" id="fullName" name="fullName"><br><br>
 
-        <label for="memberId">Member ID:</label>
+        <label for="memberId">Member ID:</label><br>
         <input type="text" id="memberId" name="memberId"><br><br>
 
-        <label for="email">Email Address:</label>
+        <label for="email">Email Address:</label><br>
         <input type="email" id="email" name="email"><br><br>
 
-        <label for="phone">Contact Number:</label>
+        <label for="phone">Contact Number:</label><br>
         <input type="tel" id="phone" name="phone"><br><br>
 
-        <label for="category">Book Category:</label>
+        <label for="category">Book Category:</label><br>
         <select id="category" name="category">
             <option value="empty"> </option>
             <option value="acadamic">Acadamic</option>
@@ -52,25 +45,50 @@
             
         </select><br><br>
 
-        <label for="bookName">Book Name:</label>
+        <label for="bookName">Book Name:</label><br>
         <input type="text" id="bookName" name="bookName"><br><br>
 
         
         <input type="checkbox" id="terms" name="terms">
         <label for="terms">I accept responsibility for returning this book undamaged by due date.</label><br><br>
         
-      <label for="reservedate">Reserve Date:</label>
-      <input type="date" id="reserveDate" name="reserveDate" onchange="calculateRemainingDays()"><br><br>
-      <p id="daysCountDisplay" style="font-weight: bold; color: black;"></p>
-      <input type="submit" value="Reserve Book">
+      <label for="reservedate">Reserve Date:</label><br>
+      <input type="date" id="reserveDate" name="reserveDate" "><br><br>
+      <input type="submit" value="Reserve Book"><br><br>
+
+      </form><br><br>
+      
+    </div>
+      
+    <div>
+        <h4>Days Remaining.</h4> 
+        <form action="#" id="reservationForm" method="POST">
+        <label for="reserveDate">Reserved Date:</label><br>
+        <input type="date" id="reservedDate" name="reserveDate" onchange="showReservedDate()">
         
     </form>
-</div>
+        
+        <p id="daysCountDisplay" style="font-weight: bold; color: black;"></p>
 
-    <script >
-        function calculateRemainingDays() {
+        </div>
+
+
+    <script>
+
+    /*function showReservedDate(){
+        
+        let inputDateVal = document.getElementById("reservedDate").value;
+        
+        if (inputDateVal) {
+            
+            document.getElementById("daysCountDisplay").innerHTML = `Reserved Date: ${inputDateVal}`;
+        }
+    }*/
+    
+     
+    function showReservedDate() {
    
-    let inputDateVal = document.getElementById("reserveDate").value;
+    let inputDateVal = document.getElementById("reservedDate").value;
     
     if (!inputDateVal) {
         return; 
@@ -111,4 +129,3 @@
     </script>
 </body>
 </html>
-
