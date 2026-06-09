@@ -3,10 +3,7 @@ body{
     margin:0;
     pading:0;
     display:flex;
-   
-
-
-
+   justify-content:center;
 }
 
 /*page 01*/
