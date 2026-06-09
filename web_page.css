@@ -1,6 +1,6 @@
 body{
     background-color:#E6D3B3;  /*beige*/
-  display:flex;
+  
    
 }
 
@@ -33,7 +33,7 @@ nav a {
 
 }
 
-nav:hover {
+nav a:hover {
     color:#A8763E;  /*camel*/
 }
 
@@ -55,6 +55,8 @@ label{
 
 input{
     width:100%;
+    padding:10px;
+    box-sizing:border-box;
     
 }
      
