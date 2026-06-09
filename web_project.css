@@ -27,3 +27,9 @@ nav a {
 nav:hover {
     color:#A8763E;  /*camel*/
 }
+
+ .carousel-item img{
+    width:60%;
+    height:400px;
+    object-fit:cover;
+}
