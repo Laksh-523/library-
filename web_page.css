@@ -21,7 +21,7 @@ body{
 nav {
     background-color:#341E11;  /*coffee*/
     padding:5px;
-    position:fixed;
+    position:sticky;
     display:flex;
     justify-content:flex-end;
 
