@@ -1,1 +1,51 @@
-# library-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group project home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+        .carousel-item img{
+    width:60%;
+    height:400px;
+    object-fit:cover;
+}
+    </style>
+</head>
+<body>
+    <h1>PageTurners </h1>
+    <!--navigation bar-->
+    <nav>
+       <div> 
+        
+             <a href="index.html">HOME</a>
+            <a href="#">BBB</a>
+            <a href="#">CCC</a>
+            <a href="#">DDD</a>
+        
+        </div>
+    </nav>
+     <div class="container mt-4">
+        <!--images-->
+        <center>
+    <div id="slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div>
+            <div  class="carousel-item active">
+                <img src="book.jpg" alt="book image in here"> 
+            </div>
+             <div class="carousel-item">
+               <img src="https://fifislkn.com/wp-content/uploads/2024/08/%EA%B3%A0%EB%AA%85%EB%94%B8-%EB%9C%BB.webp"
+                alt="book2 image in here" width="700" height="40%"> 
+             </div>
+             <div class="carousel-item">
+                <img src="book3.jpg" alt="book image in here"> 
+            </div>
+        </div>
+   </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>
