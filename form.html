@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+</head>
+<body>
 
+    
+    
+
+    <form action="#" id="reservationForm" method="POST" >
+        
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName"><br><br>
+
+        <label for="memberId">Member ID:</label><br>
+        <input type="text" id="memberId" name="memberId"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone">Contact Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="category">Book Category:</label><br>
+        <select id="category" name="category">
+            <option value="empty"> </option>
+            <option value="acadamic">Acadamic</option>
+            <option value="research">Research & Reference</option>
+            <option value="children">Children & Educational</option>
+            <option value="digital">Digital Resources</option>
+            <option value="fiction">Literature & Fiction</option>
+            
+        </select><br><br>
+
+        <label for="bookName">Book Name:</label><br>
+        <input type="text" id="bookName" name="bookName"><br><br>
+
+        
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I accept responsibility for returning this book undamaged by due date.</label><br><br>
+        
+      <label for="reservedate">Reserve Date:</label><br>
+      <input type="date" id="reserveDate" name="reserveDate" onchange="calculateRemainingDays()"><br><br>
+      <p id="daysCountDisplay" style="font-weight: bold; color: black;"></p>
+      <input type="submit" value="Reserve Book">
+        
+    </form>
+
+    <script >
+        function calculateRemainingDays() {
+   
+    let inputDateVal = document.getElementById("reserveDate").value;
+    
+    if (!inputDateVal) {
+        return; 
+    }
+
+    
+    let reservationDate = new Date(inputDateVal);
+    
+    
+    let returnDeadline = new Date(reservationDate);
+    returnDeadline.setDate(reservationDate.getDate() + 14);
+
+    
+    let today = new Date();
+   today.setHours(0, 0, 0, 0);
+    returnDeadline.setHours(0, 0, 0, 0);
+
+    
+    let timeDifference = returnDeadline.getTime() - today.getTime();
+
+    
+    let daysRemaining = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+
+    
+    let displayElement = document.getElementById("daysCountDisplay");
+
+    if (daysRemaining > 0) {
+        displayElement.innerHTML = "There are  " + daysRemaining + " remaining days to return book .";
+        displayElement.style.color = "black";
+    } else if (daysRemaining === 0) {
+        displayElement.innerHTML = "Today is the deadline to return the book!";
+        displayElement.style.color = "black";
+    } else {
+        displayElement.innerHTML = "The return date for the book has expired!";
+        displayElement.style.color = "red";
+    }
+}
+    </script>
+</body>
+</html>
+</body>
+</html>
