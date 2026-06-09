@@ -1,6 +1,9 @@
 body{
     background-color:#E6D3B3;  /*beige*/
-
+    margin:0;
+    pading:0;
+    display:flex;
+   
 
 
 
@@ -44,6 +47,7 @@ nav:hover {
     width:700px;
     height:600px;
     border-radius:15px;
+    justify-content:center;
 }
 
 label{
