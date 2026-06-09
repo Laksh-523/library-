@@ -37,14 +37,15 @@ nav:hover {
     color:#A8763E;  /*camel*/
 }
 
-/*.form-container {
+.form-container {
     background-color:#CDB286;  /*sand/*
     width:700px;
     height:600px;
     border-radius:15px;
-    
+    text-align:center;
     margin-top:10vh;
-} */
+    padding:20px;
+} 
 
 label{
     display:block;
