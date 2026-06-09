@@ -21,7 +21,7 @@ body{
 nav {
     background-color:#341E11;  /*coffee*/
     padding:5px;
-    position:sticky;
+    position:fixed;
     display:flex;
     justify-content:flex-end;
 
@@ -37,6 +37,13 @@ nav a {
 
 nav:hover {
     color:#A8763E;  /*camel*/
+}
+
+.form-container {
+    background-color:#CDB286;  /*sand*/
+    width:700px;
+    height:600px;
+    border-radius:15px;
 }
 
 
