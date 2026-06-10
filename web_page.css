@@ -39,11 +39,14 @@ nav a:hover {
 
 .form-container {
     background-color:#CDB286;  /*sand*/
-    width: 300px;
-    height:600px;
+    /*width: 300px;
+    height:600px;*/
     border-radius:15px;
     text-align:center;
-    margin-top:10vh;
+    /*margin-top:10vh;*/
+    max-width: 600px;         /* Form එක ඕනෑවට වඩා පළල් වීම වළක්වයි */
+    margin: 40px auto;        /* Form එක හරස් අතට ලස්සනට මැදට (Center) ගනියි */
+    padding: 30px;
 } 
 
 label{
