@@ -75,18 +75,35 @@
 .para1 h3
 {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Century";
     
 }
 .para1 p
 {
-     text-align: center;
     font-family: "Comic Sans MS", cursive;
     font-size: 20px;
 }
-  </style>
- 
+
+.news{
+    width:80%;
+    margin:auto;
+}
+
+.news-item{
+    border-left:5px solid #007bff;
+    padding:15px;
+    margin:15px 0;
+    background:#f8f9fa;
+}
+.head2
+{
+    text-align: center;
+}
+
+
+
+</style>
 </head>
 <body>
     <h1>PageTurners </h1>
@@ -97,8 +114,8 @@
             <a href="index.html">HOME</a>
             <a href="form.html">RESERVE</a>
             <a href="books.html">CATALOG</a>
-            <a href="registration.html">Registration</a>
-            <a href="#">dd</a>
+            <a href="#">eee</a>
+            <a href="#">DDD</a>
         
         </div>
     </nav>
@@ -107,8 +124,8 @@
             <h3>    Welcome to PageTurners</h3>
             <br>
             <p>
-        A modern library management system designed to streamline book<br> borrowing,
-         manage inventory and <br>provide an effortless way to access library resources.
+        A modern library management system designed to streamline book borrowing,
+         manage inventory, and provide an effortless way to access library resources.
          </p>
         </div>
         <div class="paraRight">
@@ -167,7 +184,27 @@ setInterval(changeImage, 2000);
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<br><br>
+<h2 class="head2">PageTurners Newsletters</h2>
+<br><br>
+<section class="news">
+    <h2>Latest News & Updates</h2>
+<br><br>
+    <div class="news-item">
+        <h3>📚 Library News</h3>
+        <p>500 new books have been added to the library collection.</p>
+    </div>
 
-    
+    <div class="news-item">
+        <h3>📢 Announcement</h3>
+        <p>The library will be closed on June 15 due to a public holiday.</p>
+    </div>
+
+    <div class="news-item">
+        <h3>🎓 Event & Workshop</h3>
+        <p>Digital Literacy Workshop will be held next Saturday.</p>
+    </div>
+</section>
+</div>
 </body>
 </html>
