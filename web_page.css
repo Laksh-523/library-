@@ -50,6 +50,10 @@ nav a:hover {
     padding: 30px;
 } 
 
+.form-container label {
+    color:#20140D;  /*chocolate*/
+}
+
 label{
     display:block;
     margin-bottom:5px;
