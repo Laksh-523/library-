@@ -85,4 +85,12 @@ input:focus , select:focus{
     box-shadow: 0 0 5px rgba(143, 83, 29, 0.5);
 }
 
+input[type="submit"] {
+  background-color: #4E2A15; /*cognac*/
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
 
