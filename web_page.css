@@ -74,4 +74,11 @@ input , select {
     transition: border-color 0.3s ease;
 }
 
+input:focus , select:focus{
+    border-color:#663A17; /*chestnut*/
+    background-color:#CDB286;  /*sand*/
+    outline:none;
+    box-shadow: 0 0 5px rgba(143, 83, 29, 0.5);
+}
+
 
