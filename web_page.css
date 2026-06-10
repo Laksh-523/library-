@@ -70,10 +70,6 @@ input , select {
     border-radius:7px;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
-    width: 90%;
-    padding: 12px 15px;
-    margin-top: 8px;
-    margin-bottom: 20px;
 }
 
 
