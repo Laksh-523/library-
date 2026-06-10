@@ -4,7 +4,7 @@ body{
    
 }
 
-/*page 01*/
+
 
 
  h1 {
@@ -36,6 +36,9 @@ nav a {
 nav a:hover {
     color:#A8763E;  /*camel*/
 }
+
+
+/*page 02*/
 
 .form-container {
     background-color:#CDB286;  /*sand*/
@@ -108,4 +111,8 @@ input[type="submit"] {
     margin: 40px auto;
     padding: 30px;
 }
+
+/*page 03 */
+
+
 
