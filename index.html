@@ -7,19 +7,20 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="web_page.css">
     <style>
-.image{
-    width:70%;
-    height:400px;
-    margin:20px auto;
-
+.image1{
+    width:100%;
+    height:320px;
+    max-width: 750px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 .image1 img{
-    width:60%;
-    height:500px;
+    width:100%;
+    height:100%;
     object-fit:cover;
-    border-radius:10px;
     display:block;
-    margin:auto;
+    max-width: 100%;  
+    max-height: 100%;
 }
 
 .slider img{
@@ -42,20 +43,47 @@
     border-radius:15px;
     display:flex;
     align-items:center;
-    gap:25px;
+    gap:15px;
     background:white;
     transition: 0.3s;
-    margin:10px;
 }
 
 .boxes:hover{
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-nav{
-    margin_bottom:10px;
+.para1
+{
+    display: flex;
+    align-items: center;       
+    justify-content: space-between; 
+    margin: 40px auto;         
+    padding: 0 20px;
+    gap: 40px;
 }
-
+.paraLeft
+{
+    flex:1;
+    text-align:left;
+}
+.paraRight
+{
+    flex:1;
+    display:flex;
+    justify-content: flex-end;
+}
+.para1 h3
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Century";
+    
+}
+.para1 p
+{
+    font-family: "Comic Sans MS", cursive;
+    font-size: 20px;
+}
   </style>
  
 </head>
@@ -66,22 +94,38 @@ nav{
        <div> 
         
             <a href="index.html">HOME</a>
-           <a href="books.html">CATALOG</a>
-           <a href="registration.html">REGISTRATION</a>
             <a href="form.html">RESERVE</a>
-            
-            
+            <a href="books.html">CATALOG</a>
+            <a href="#">eee</a>
             <a href="#">DDD</a>
         
         </div>
     </nav>
+    <section class="para1">
+        <div class="paraLeft">
+            <h3>    Welcome to PageTurners</h3>
+            <br>
+            <p>
+        A modern library management system designed to streamline book borrowing,
+         manage inventory, and provide an effortless way to access library resources.
+         </p>
+        </div>
+        <div class="paraRight">
+            <div class="image1">
+                <img id="sliderImage"
+                    src="https://nwasianweekly.com/wp-content/uploads/2020/02/NAMES-library.jpg"
+                    alt="Library Image">
+                </div>
+        </div>
   <script>
+   
 const images = [
     "https://nwasianweekly.com/wp-content/uploads/2020/02/NAMES-library.jpg",
 
     "https://cdn.prod.website-files.com/604a97c70aee09eed25ce991/61897a35583a9b51db018d3e_MartinPublicSeating-97560-Importance-School-Library-blogbanner1.jpg",
 
-    "https://img.magnific.com/free-photo/cafe-frankfurt-germany_1268-20912.jpg?semt=ais_hybrid&w=740&q=80"
+    "https://img.magnific.com/free-photo/cafe-frankfurt-germany_1268-20912.jpg?semt=ais_hybrid&w=740&q=80w=650&h=350"
+
 ];
 
 let currentImage = 0;
@@ -98,13 +142,10 @@ function changeImage() {
 
 setInterval(changeImage, 2000);
 </script>
-    <br>
-    <br>
-    <div class="image1">
-    <img id="sliderImage"
-         src="https://nwasianweekly.com/wp-content/uploads/2020/02/NAMES-library.jpg"
-         alt="Library Image">
-</div>
+
+    
+</section>
+
     <div class="allBox">
         <div class="boxes">
     
