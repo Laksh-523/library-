@@ -1,1 +1,113 @@
-# library-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {width: 10%;height: 500};
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Books Catalog</h1>
+        <div>
+            <input type="text" placeholder="Search title, author, category...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <section>
+        <h2>Top Categories</h2>
+        <div>
+            <div>
+                <img src="ACADEMIC.jpg" alt="Academic">
+                <h3>ACADEMIC</h3>
+            </div>
+            <div>
+                <img src="LITERATURE.jpg" alt="Literature">
+                <h3>LITERATURE</h3>
+            </div><div>
+                <img src="RESEARCH.jpg" alt="Research">
+                <h3>RESEARCH</h3>
+            </div><div>
+                <img src="CHILDREN.jpg" alt="Children">
+                <h3>CHILDREN</h3>
+            </div><div>
+                <img src="DIGITAL RESOURCES.jpg" alt="Digital Resources">
+                <h3>DIGITAL RESOURCES</h3>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <button>Browsing Now</button>
+            <div>
+                <img src="Featured Book 1.jpg" alt="Featured Book 1">
+                <img src="Featured Book 2.jpg" alt="Featured Book 2">
+                <img src="Featured Book 3.jpg" alt="Featured Book 3">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Newly Added Titles</h2>
+        <div>
+            <img src="book-cs.jpg" alt="Computer Science">
+            <div>Academic</div>
+            <h4>Introduction to C</h4>
+            <p>By: Dennis Ritchie</p>
+            <span>Available</span>
+        </div>
+        <div>
+            <img src="book-math.jpg" alt="Computer Science">
+            <div>Academic</div>
+            <h4>Linear Algebra</h4>
+            <p>By: Gilbert Strang</p>
+            <span>Available</span>
+        </div>
+        <div>
+            <img src="book-novel.jpg" alt="Computer Science">
+            <div>Literature & Fiction</div>
+            <h4>Madol Doova</h4>
+            <p>By: M. Wickramasinghe</p>
+            <span>Available</span>
+        </div>
+        <div>
+            <img src="book-research.jpg" alt="Computer Science">
+            <div>Research & Reference</div>
+            <h4>Communications</h4>
+            <p>By: IEEE Research</p>
+            <span>Borrowed</span>
+        </div>
+        <div>
+            <img src="book-child.jpg" alt="Computer Science">
+            <div>Children's & Educational</div>
+            <h4>Hat Pana</h4>
+            <p>By: Kumaratunga Munidasa</p>
+            <span>Available</span>
+        </div>
+        <div>
+            <img src="book-audio.jpg" alt="Computer Science">
+            <div>Digital Resources</div>
+            <h4>The Great Gatsby (Audio)</h4>
+            <p>By: F. Scott Fitzgerald</p>
+            <span>Available</span>
+        </div>
+    </section>
+
+    <div>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <span>...</span>
+        <a href="#">Total 322</a>
+    </div>
+
+
+</body>
+</html>
