@@ -21,7 +21,7 @@
             display:flex;
             width:300%;
             height:100%;
-            animation:slideAnimation 9s infinite ease-in-out;
+            animation:slideAnimation 6s infinite ease-in-out;
         }
         .image-new2{
             width:60%;
@@ -32,7 +32,21 @@
             margin:0 auto 40px auto;
             position:relative;
         }
-  </style>    
+           @keyframes slideAnimation {0%, 30% {transform: translateX(0%);
+    }
+
+    33%, 63% {transform: translateX(-33.333%);
+    }
+
+    66%, 96% {transform: translateX(-66.666%);
+    }
+
+    100% { transform: translateX(0%);
+    }
+
+}
+  </style> 
+ 
 </head>
 <body>
     <h1>PageTurners </h1>
@@ -51,7 +65,6 @@
  
      <div class="container mt-4">
         <!--images-->
-        <center>
     <div class="image-new2">
         <div class="image-new">
             <div  class="image">
