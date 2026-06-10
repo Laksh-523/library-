@@ -44,8 +44,8 @@ nav a:hover {
     border-radius:15px;
     text-align:center;
     /*margin-top:10vh;*/
-    max-width: 600px;         /* Form එක ඕනෑවට වඩා පළල් වීම වළක්වයි */
-    margin: 40px auto;        /* Form එක හරස් අතට ලස්සනට මැදට (Center) ගනියි */
+    max-width: 600px; 
+    margin: 40px auto;
     padding: 30px;
 } 
 
