@@ -1,183 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="web_page.css">
-
-    <style>
-  
-.error-msg {
-    color: #ff4d4d;
-    font-size: 12px;
-    margin-top: 5px;
-    display: none; 
-}
-    </style>
-    
+    <title>Document</title>
+   
+   
 </head>
 <body>
-     <h1>PageTurners </h1>
-        <nav>
-       <div> 
-        
-            <a href="index.html">HOME</a>
-            <a href="form.html">RESERVE</a>
-            <a href="books.html">CATALOG</a>
-            <a href="registration.html">Registration</a>
-            <a href="#">dd</a>
-        
-        </div>
-    </nav>
-    
-<div class="form-container">
-      <form action="#" id="reservationForm2" method="POST" onsubmit="return validateForm()">
-          
-        
-        <label for="fullName">Full Name:</label><br>
-        <input type="text" id="fullName" name="fullName"><br><br>
-
-        <label for="memberId">Member ID:</label><br>
-        <input type="text" id="memberId" name="memberId"><br><br>
-
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email"><br>
-          <span class="error-msg" id="emailError" style="display:none">Please enter a valid email</span><br><br>
-
-        <label for="phone">Contact Number:</label><br>
-        <input type="tel" id="phone" name="phone"><br><br>
-
-        <label for="category">Book Category:</label><br>
-        <select id="category" name="category">
-            <option value="empty"> </option>
-            <option value="acadamic">Acadamic</option>
-            <option value="research">Research & Reference</option>
-            <option value="children">Children & Educational</option>
-            <option value="digital">Digital Resources</option>
-            <option value="fiction">Literature & Fiction</option>
-            
-        </select><br><br>
-
-        <label for="bookName">Book Name:</label><br>
-        <input type="text" id="bookName" name="bookName"><br><br>
-
-        
-        <input type="checkbox" id="terms" name="terms">
-        <label for="terms">I accept responsibility for returning this book undamaged by due date.</label><br><br>
-        
-      <label for="reservedate">Reserve Date:</label><br>
-      <input type="date" id="reserveDate" name="reserveDate" "><br><br>
-      <input type="submit" value="Reserve Book"><br><br>
-
-      </form><br><br>
-      
+    <div class="Membership">
+    <div class="Mhead">
+        <h3>Membership Application</h3>
+        <p>Please fill out your details to join our library community.</p>
     </div>
-      
-    <div class="data-reserve">
-        <h4 class="data-remain">Days Remaining.</h4> 
-        <form action="#" id="reservationForm" method="POST">
-        <label for="reserveDate">Reserved Date:</label><br>
-        <input type="date" id="reservedDate" name="reserveDate" onchange="showReservedDate()">
-        
-    </form>
-        
-        <p id="daysCountDisplay" style="font-weight: bold; color: black;"></p>
 
+    <form id="RForm" action="#" class="Rform" onsubmit="showMsg(event);">
+        <div class="form">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        </div>
+        
+        <div class="form">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
 
+        <div class="form">
+            <label for="planType">Select Plan:</label>
+            <select id="planType" name="planType" required>
+                <option value="" disabled selected>Choose a membership plan</option>
+                <option value="student">Student Plan</option>
+                <option value="standard">Standard Plan</option>
+                <option value="premium">Premium Plan</option>
+            </select>
+        </div>
 
-    <script>
+        <div class="form">
+            <label for="profileImage">Upload Profile Picture:</label>
+            <input type="file" id="profileImage" name="profileImage" accept="image/png, image/jpeg" required>
+        </div>
 
-    function validateForm(){
-            let x=document.forms["reservationForm2"]["fullName"].value;
-            let y=document.forms["reservationForm2"]["memberId"].value;
-            let z=document.forms["reservationForm2"]["email"].value;
-            let a=document.forms["reservationForm2"]["bookName"].value;
-            let b=document.forms["reservationForm2"]["phone"].value;
-            let c=document.forms["reservationForm2"]["category"].value;
-            let d=document.forms["reservationForm2"]["terms"].checked;
-            if(x=="" || y=="" || z=="" || a=="" || b=="" ||c=="" || !d )
-                    {
-                      alert("Reserved failed ");
-                      return false;
-                      }
-           
-            else {alert("successfully Reserved.");
-            return true;
-
-            }
-            
-            }
-
-     document.getElementById('reservationForm2').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-
+        <div class="submit">
+            <button type="submit" class="submit">Submit Application</button>
+        </div>
+    </form>
+</div>
+<script>
     
-    const emailInput = document.getElementById('email');
-     const emailError = document.getElementById('emailError');
-    let isValid = true;
-
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
-
-    if (emailInput.value.trim() === "") {
-        emailError.textContent = "Please enter your email address";
-        emailError.style.display = 'block';
-        emailInput.classList.add('invalid'); 
-        isValid = false;
-    } else if (!emailPattern.test(emailInput.value)) {
-        emailError.textContent = "Invalid email format (e.g., name@email.com)";
-        emailError.style.display = 'block';
-        emailInput.classList.add('invalid');
-        isValid = false;
-    } else {
-        emailError.style.display = 'none';
-        emailInput.classList.remove('invalid'); 
+    function showMsg(event) {
+        event.preventDefault();
+        alert("Application submitted successfully!\n\nPlease visit the library front desk with your ID card to complete your registration.");
+        window.location.href = "index.html";
+        
     }
+    
+</script>
 
-  
-});
-     
-    function showReservedDate() {
-   
-    let inputDateVal = document.getElementById("reservedDate").value;
-    
-    if (!inputDateVal) {
-        return; 
-    }
-
-    
-    let reservationDate = new Date(inputDateVal);
-    
-    
-    let returnDeadline = new Date(reservationDate);
-    returnDeadline.setDate(reservationDate.getDate() + 14);
-
-    
-    let today = new Date();
-   today.setHours(0, 0, 0, 0);
-    returnDeadline.setHours(0, 0, 0, 0);
-
-    
-    let timeDifference = returnDeadline.getTime() - today.getTime();
-
-    
-    let daysRemaining = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
-
-    
-    let displayElement = document.getElementById("daysCountDisplay");
-
-    if (daysRemaining > 0) {
-        displayElement.innerHTML = "There are  " + daysRemaining + " remaining days to return book .";
-        displayElement.style.color = "black";
-    } else if (daysRemaining === 0) {
-        displayElement.innerHTML = "Today is the deadline to return the book!";
-        displayElement.style.color = "black";
-    } else {
-        displayElement.innerHTML = "The return date for the book has expired!";
-        displayElement.style.color = "red";
-    }
-}
-    </script>
 </body>
 </html>
