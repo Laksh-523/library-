@@ -184,7 +184,7 @@ h4.data-reserve {
     margin-bottom:50px;
 }
 
-.step_1,.step_2,.step_3{
+.boxes{
     width:300px;
     background:white;
     padding:35px 25px;
@@ -197,23 +197,17 @@ h4.data-reserve {
     cursor:pointer;
 }
 
-.step_1:hover,
-.step_2:hover,
-.step_3:hover{
+.boxes:hover{
     transform:translateY(-15px);
     box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
 
-.step_1 h3,
-.step_2 h3,
-.step_3 h3{
+.boxes{
     margin-bottom:15px;
     font-size:28px;
 }
 
-.step_1 p,
-.step_2 p,
-.step_3 p{
+.boxes p{
     color:#8F531D; /*caramel*/
     line-height:1.6;
 }
