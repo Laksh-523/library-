@@ -112,6 +112,10 @@ input[type="submit"] {
     padding: 30px;
 }
 
+h4.data-reserve {
+    text-align:center;
+    color:#4E2A15; /*cognac*/
+}
 /*page 03 */
 
 
