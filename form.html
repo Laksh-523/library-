@@ -3,58 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
-   
+    <title>PageTurners</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--for footer icons-->
+
+    <link rel="stylesheet" href="web_page.css">
+
+    <style>
+        .error-msg {
+            color: #ff4d4d;
+            font-size: 15px; 
+            font-weight: bold;
+            margin-top: 5px;
+            display: none; 
+        }
+        
+        .invalid {
+            border: 2px solid #ff4d4d;
+        }
+    </style>
 </head>
 <body>
-    <div class="Membership">
-    <div class="Mhead">
-        <h3>Membership Application</h3>
-        <p>Please fill out your details to join our library community.</p>
+    <h1>PageTurners </h1>
+    <nav>
+        <div> 
+            <a href="index.html">HOME</a>
+            <a href="form.html">RESERVE</a>
+            <a href="registration">REGISTRATION</a>
+            <a href="#">DDD</a>
+        </div>
+    </nav>
+    
+    <div class="form-container">
+        <form action="#" id="reservationForm2" method="POST">
+            
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName"><br>
+            <span class="error-msg" id="nameError">Please enter your full name</span><br><br>
+
+            <label for="memberId">Member ID:</label><br>
+            <input type="text" id="memberId" name="memberId"><br>
+            <span class="error-msg" id="memberError">Please enter your member ID</span><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <span class="error-msg" id="emailError">Please enter a valid email</span><br><br>
+
+            <label for="phone">Contact Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <span class="error-msg" id="phoneError">Please enter a valid 10-digit phone number</span><br><br>
+
+            <label for="category">Book Category:</label><br>
+            <select id="category" name="category">
+                <option value="empty"> </option>
+                <option value="acadamic">Academic</option>
+                <option value="research">Research & Reference</option>
+                <option value="children">Children & Educational</option>
+                <option value="digital">Digital Resources</option>
+                <option value="fiction">Literature & Fiction</option>
+            </select><br>
+            <span class="error-msg" id="categoryError">Please select a book category</span><br><br>
+
+            <label for="bookName">Book Name:</label><br>
+            <input type="text" id="bookName" name="bookName"><br>
+            <span class="error-msg" id="bookError">Please enter the book name</span><br><br>
+
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I accept responsibility for returning this book undamaged by due date.</label><br>
+            <span class="error-msg" id="termsError">You must accept the terms to proceed</span><br><br>
+            
+            <label for="reserveDate">Reserve Date:</label><br>
+            <input type="date" id="reserveDate" name="reserveDate"><br>
+            <span class="error-msg" id="dateError">Please select a reservation date</span><br><br>
+            
+            <input type="submit" value="Reserve Book"><br><br>
+        </form>
+    </div>
+      
+    <div class="data-reserve">
+        <h4 class="data-remain">Days Remaining.</h4> 
+        <form action="#" id="reservationForm" method="POST">
+            <label for="reservedDate">Reserved Date:</label><br>
+            <input type="date" id="reservedDate" name="reserveDate" onchange="showReservedDate()">
+        </form>
+        <p id="daysCountDisplay" style="font-weight: bold; color: black;"></p>
     </div>
 
-    <form id="RForm" action="#" class="Rform" onsubmit="showMsg(event);">
-        <div class="form">
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
-        </div>
+    <script>
+    document.getElementById('reservationForm2').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        let isValid = true;
+
         
-        <div class="form">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
+        const fullName = document.getElementById('fullName');
+        const memberId = document.getElementById('memberId');
+        const emailInput = document.getElementById('email');
+        const phone = document.getElementById('phone');
+        const category = document.getElementById('category');
+        const bookName = document.getElementById('bookName');
+        const terms = document.getElementById('terms');
+        const reserveDate = document.getElementById('reserveDate');
 
-        <div class="form">
-            <label for="planType">Select Plan:</label>
-            <select id="planType" name="planType" required>
-                <option value="" disabled selected>Choose a membership plan</option>
-                <option value="student">Student Plan</option>
-                <option value="standard">Standard Plan</option>
-                <option value="premium">Premium Plan</option>
-            </select>
-        </div>
-
-        <div class="form">
-            <label for="profileImage">Upload Profile Picture:</label>
-            <input type="file" id="profileImage" name="profileImage" accept="image/png, image/jpeg" required>
-        </div>
-
-        <div class="submit">
-            <button type="submit" class="submit">Submit Application</button>
-        </div>
-    </form>
-</div>
-<script>
-    
-    function showMsg(event) {
-        event.preventDefault();
-        alert("Application submitted successfully!\n\nPlease visit the library front desk with your ID card to complete your registration.");
-        window.location.href = "index.html";
         
+        const nameError = document.getElementById('nameError');
+        const memberError = document.getElementById('memberError');
+        const emailError = document.getElementById('emailError');
+        const phoneError = document.getElementById('phoneError');
+        const categoryError = document.getElementById('categoryError');
+        const bookError = document.getElementById('bookError');
+        const termsError = document.getElementById('termsError');
+        const dateError = document.getElementById('dateError');
+
+        
+        const errors = document.querySelectorAll('.error-msg');
+        errors.forEach(err => err.style.display = 'none');
+        const inputs = document.querySelectorAll('input, select');
+        inputs.forEach(input => input.classList.remove('invalid'));
+
+       
+        if (fullName.value.trim() === "") {
+            nameError.style.display = 'block';
+            fullName.classList.add('invalid');
+            isValid = false;
+        }
+
+       
+        if (memberId.value.trim() === "") {
+            memberError.style.display = 'block';
+            memberId.classList.add('invalid');
+            isValid = false;
+        }
+
+        
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailInput.value.trim() === "") {
+            emailError.textContent = "Please enter your email address";
+            emailError.style.display = 'block';
+            emailInput.classList.add('invalid');
+            isValid = false;
+        } else if (!emailPattern.test(emailInput.value)) {
+            emailError.textContent = "Invalid email format (e.g., name@email.com)";
+            emailError.style.display = 'block';
+            emailInput.classList.add('invalid');
+            isValid = false;
+        }
+
+       
+        const phonePattern = /^\d{10}$/;
+        if (phone.value.trim() === "") {
+            phoneError.textContent = "Please enter your contact number";
+            phoneError.style.display = 'block';
+            phone.classList.add('invalid');
+            isValid = false;
+        } else if (!phonePattern.test(phone.value.trim())) {
+            phoneError.textContent = "Phone number must be exactly 10 digits";
+            phoneError.style.display = 'block';
+            phone.classList.add('invalid');
+            isValid = false;
+        }
+
+        
+        if (category.value === "empty") {
+            categoryError.style.display = 'block';
+            category.classList.add('invalid');
+            isValid = false;
+        }
+
+       
+        if (bookName.value.trim() === "") {
+            bookError.style.display = 'block';
+            bookName.classList.add('invalid');
+            isValid = false;
+        }
+
+        
+        if (reserveDate.value === "") {
+            dateError.style.display = 'block';
+            reserveDate.classList.add('invalid');
+            isValid = false;
+        }
+
+        
+        if (!terms.checked) {
+            termsError.style.display = 'block';
+            isValid = false;
+        }
+
+        
+        if (isValid) {
+            alert("Successfully Reserved.");
+            this.submit(); // Form eka submit karanna puluwan dan
+        } else {
+            alert("Reservation failed. Please check the errors.");
+        }
+    });
+     
+    function showReservedDate() {
+        let inputDateVal = document.getElementById("reservedDate").value;
+        if (!inputDateVal) return; 
+
+        let reservationDate = new Date(inputDateVal);
+        let returnDeadline = new Date(reservationDate);
+        returnDeadline.setDate(reservationDate.getDate() + 14);
+
+        let today = new Date();
+        today.setHours(0, 0, 0, 0);
+        returnDeadline.setHours(0, 0, 0, 0);
+
+        let timeDifference = returnDeadline.getTime() - today.getTime();
+        let daysRemaining = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+        let displayElement = document.getElementById("daysCountDisplay");
+
+        if (daysRemaining > 0) {
+            displayElement.innerHTML = "There are " + daysRemaining + " remaining days to return book.";
+            displayElement.style.color = "black";
+        } else if (daysRemaining === 0) {
+            displayElement.innerHTML = "Today is the deadline to return the book!";
+            displayElement.style.color = "orange";
+        } else {
+            displayElement.innerHTML = "The return date for the book has expired!";
+            displayElement.style.color = "red";
+        }
     }
-    
-</script>
+    </script>
+
+    <div class="footer">
+    <footer>
+    <div class="footer-content">
+        <!--<h3>City Library</h3>-->
+
+        <div class="footer-contact">
+             <p>📧 pageturners@gmail.com</p>
+             <p>📞 +94 76 402 8118</p>
+            <p>📍 <a href="https://maps.app.goo.gl/2VAJ7m4vrbdovsPM9?g_st=aw">
+                 Page Turners Library, Kandy Road, Kelaniya, Sri Lanka
+                </a>
+                </p>
+</div>
+
+        <div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/yourpage" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@yourchannel" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</div>
+
+        <p>&copy; 2026 City Library. All Rights Reserved.</p>
+    </div>
+</footer>
+</div>
 
 </body>
 </html>
