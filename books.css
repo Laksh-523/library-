@@ -78,9 +78,8 @@
     transition: transform 0.3s, box-shadow 0.3s;    /* Smooths out any hover animations over 0.3 seconds */
 }    
 .Browsing img:hover {
-    transform: scale(1.05) rotate(-2deg);   
+    transform: scale(1.05) rotate(-2deg) rotateY(15deg);   
     box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-    transform: rotateY(15deg) scale(1.05);
 }    
     
 /*section 03*/   
