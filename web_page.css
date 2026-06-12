@@ -51,7 +51,7 @@ nav {
 }
 
 /* Links තියෙන මුළු තීරුවම දකුණට තල්ලු කරන්නේ මෙතනින් */
-.nav-links {
+.nav-link{
     display: flex;
     justify-content: flex-end; 
     width: 100%;
@@ -59,7 +59,7 @@ nav {
 }
 
 /* Links ඇතුළේ තියෙන අකුරු ලස්සන කරන්නේ මෙතනින් */
-.nav-links a {
+.nav-link a {
     color: #B4B6B8;  
     text-decoration: none;
     font-weight: bold;
