@@ -44,13 +44,10 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
-    box-sizing: border-box; /* අපි කලින් කතා කරපු බෝඩර් බොක්ස් එකත් මෙතනට දාන්න */
-    
     display: flex;
-    flex-direction: column;
 }
 
-/* Links තියෙන මුළු තීරුවම දකුණට තල්ලු කරන්නේ මෙතනින් */
+
 .nav-link{
     display: flex;
     justify-content: flex-end; 
