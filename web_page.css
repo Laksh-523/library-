@@ -60,7 +60,7 @@ nav {
     color: #B4B6B8;  
     text-decoration: none;
     font-weight: bold;
-    margin-left: 40px; 
+    margin-left: 20px; 
 	padding-right:40px;
 }
 
@@ -100,7 +100,7 @@ nav a:active {
     /*margin-top:10vh;*/
     max-width: 600px; 
     margin: 40px auto;
-    padding-top: 100px;
+    padding-top: 150px;
 } 
 
 .form-container label {
