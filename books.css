@@ -4,7 +4,9 @@
      justify-content: flex-end;
    align-items: center;
     width: 100%;   
-    gap: 10px;                  
+    gap: 10px;
+    margin-left:30px;
+    margin-right:30px;
 }
 .catlog-div input{
     padding: 8px 15px;
