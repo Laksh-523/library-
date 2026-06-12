@@ -81,6 +81,7 @@
 	color:white;
 	top:50%;
 	left:50%;
+	position: absolute;
 }
 
 </style> 
@@ -99,10 +100,18 @@
         
         </div>
     </nav>
-	<div class="image-text">
+
 	   <div class="image1">
-                <img id="sliderImage" src="library.jpg" alt="Library Image">
+		 <img id="sliderImage" src="library.jpg" alt="Library Image">
+		     <div class="image-text">
+			    <h3> Welcome to PageTurners</h3>
+            <br>
+            <p>
+        	A modern library management system designed to streamline book<br> borrowing,
+       	    manage inventory, and <br>provide an effortless way to access library resources.
+         </p>
         </div>
+	</div>  
 	<script>
 	const images = [
     "library.jpg",
@@ -125,13 +134,8 @@ function changeImage() {
 setInterval(changeImage, 2000);
 </script>
 	
-            <h3>    Welcome to PageTurners</h3>
-            <br>
-            <p>
-        A modern library management system designed to streamline book<br> borrowing,
-         manage inventory, and <br>provide an effortless way to access library resources.
-         </p>
-		</div>
+        
+
 
     <div class="allBox">
         <div class="boxes">
