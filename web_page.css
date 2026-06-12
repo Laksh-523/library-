@@ -36,6 +36,10 @@ nav a {
 nav a:hover {
     color:#77A6C0;  /*camel*/
 }
+.library{
+    height: 380px;
+	width: 100%;
+}
 
 
 /*page 02*/
