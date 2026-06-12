@@ -38,17 +38,20 @@ nav {
     background-color:#171725;
 	margin:0;
     padding:8px;
-    position:sticky;
+    position:fixed;
     display:flex;
     justify-content:flex-end;
-.navbar {
+	top:0;
+	left:0;
+	width:100%;
+	z-index:1000;
+/*.navbar {
   	position: fixed;  
   	left: 0;           
  	width: 100%;       
  	z-index: 1000;     
-}
+}*/
 
-}
 
 nav a {
     color:#B4B6B8;  
