@@ -570,6 +570,8 @@ table{
     align-items: center;
     position: relative;
     color: #ffffff;
+	justify-content: center;
+	text-align:center;
 }
 
 
