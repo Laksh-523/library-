@@ -30,6 +30,7 @@
        Each card stays at a minimum of 220px and grows to fill remaining space (1fr) */
     gap: 20px;
     margin-bottom: 5px;
+    justify-content: center;
 }
 .category {
         border-radius: 6px;
