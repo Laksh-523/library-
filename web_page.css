@@ -18,7 +18,7 @@ body{
 
 nav {
     background-color:#073A69; /*chocolate*/
-    padding:10px;
+    padding:5px;
     position:sticky;
     display:flex;
     justify-content:flex-end;
