@@ -301,7 +301,7 @@ table{
     text-align:center;
     color:#073A69; 
     border-radius:15px;
-    box-shadow: 0 10px 30px navyblue;
+    box-shadow: 0 10px 30px navy;
 	gap:22px;
     transition:0.4s ease;
     cursor:pointer;
