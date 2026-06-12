@@ -12,7 +12,14 @@ body{
     cursor: pointer;
 }
 
-
+.logo{
+    font-family:Vivaldi;
+	color:white;
+}
+.logo1{
+    font-size:7px;
+	color:white;
+}
 
 
  h1 {
