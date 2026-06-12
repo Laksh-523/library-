@@ -129,21 +129,7 @@ h4.data-reserve {
     flex-wrap:wrap;
 }
 
-.para1
-{
-    display: flex;
-    align-items: center;       
-    justify-content: space-between; 
-    margin: 40px auto;         
-    padding: 0 20px;
-    gap: 40px;
-}
-.paraLeft
-{
-    flex:1;
-    text-align:left;
-    color:#663A17; /*chestnut*/
-}
+
 
 .paraleft h3{
     color:#20140D; /*chocolate*/
