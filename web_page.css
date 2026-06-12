@@ -301,8 +301,8 @@ table{
     text-align:center;
     color:#073A69; 
     border-radius:15px;
-    box-shadow: 0 10px 30px rgba(7, 58, 105, 0.08);
-	gap:15px;
+    box-shadow: 0 10px 30px navyblue;
+	gap:22px;
     transition:0.4s ease;
     cursor:pointer;
 }
@@ -319,7 +319,12 @@ table{
 
 .boxes p{
     color:#5A94C1; 
+	font-size:20px;
     line-height:1.6;
+}
+
+.boxes h3{
+	font-size:30px;
 }
 
 .register_now{
