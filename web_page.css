@@ -278,7 +278,7 @@ table{
     border-radius:10px;
     margin:40px 0 80px;
     background:white;
-    box-shadow:0 4px 15px #D3D3D3; 
+    box-shadow:0 4px 15px #5a94c1; 
 }
 
 .Rtable th{
@@ -286,7 +286,6 @@ table{
     color:#B4B6B8; 
     padding:18px;
     text-align:left;
-    border-radius:10px;
 
 }
 
@@ -315,7 +314,7 @@ table{
     text-align:center;
     color:#073A69; 
     border-radius:15px;
-    box-shadow:0 5px 15px #D3D3D3;
+    box-shadow:0 5px 15px #5A94C1;
 
     transition:0.4s ease;
     cursor:pointer;
@@ -346,7 +345,7 @@ table{
 .reg{
     display:inline-block;
     text-decoration:none;
-    background:#171725; 
+    background:#073A69; 
     color:#B4B6B8;
     padding:18px 40px;
     border-radius:10px;
@@ -356,7 +355,7 @@ table{
 }
 
 .reg:hover{
-    background:#77A6C0; 
+    background:#5A94C1; 
     transform:scale(1.05);
 }
 
@@ -369,7 +368,7 @@ table{
     display:flex;
     gap:20px;
     align-items:flex-start;
-    box-shadow:0 4px 12px #D3D3D3;
+    box-shadow:0 4px 12px  #5A94C1;
 }
 
 .icon{
