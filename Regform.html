@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+   
+</head>
+<body>
+    <div class="registration-form-container">
+    <div class="form-header">
+        <h3>Membership Application</h3>
+        <p>Please fill out your details to join our library community.</p>
+    </div>
+
+    <form id="applicationForm" action="#" class="custom-form" onsubmit="showMsg(event);">
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="planType">Select Plan:</label>
+            <select id="planType" name="planType" required>
+                <option value="" disabled selected>Choose a membership plan</option>
+                <option value="student">Student Plan</option>
+                <option value="standard">Standard Plan</option>
+                <option value="premium">Premium Plan</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="profileImage">Upload Profile Picture:</label>
+            <input type="file" id="profileImage" name="profileImage" accept="image/png, image/jpeg" required>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="submit-button">Submit Application</button>
+        </div>
+    </form>
+</div>
+<script>
+    
+    function showMsg(event) {
+        // Step 1: Show the pop-up message
+        event.preventDefault();
+        alert("Application submitted successfully!\n\nPlease visit the library front desk with your ID card to complete your registration.");
+        window.location.href = "index.html";
+        
+    }
+    
+</script>
+
+</body>
+</html>
