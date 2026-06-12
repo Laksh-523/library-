@@ -30,7 +30,8 @@ body{
 } 
 
 nav {
-    background-color:#5A94C1;
+    background: linear-gradient(to right, #073A69, #0A4C8A);
+
     padding:8px;
     position:sticky;
     display:flex;
