@@ -24,7 +24,7 @@ body{
 
 nav {
     background-color:#171725;
-
+	margin:0;
     padding:8px;
     position:sticky;
     display:flex;
