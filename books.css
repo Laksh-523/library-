@@ -1,10 +1,10 @@
 /*section 01*/
-.catlog-div{
+/*.catlog-div{
     display: flex;
     justify-content: space-between;     /* Pushes items to the absolute left and right ends */
-    align-items: center;
+   /* align-items: center;
     margin-bottom: 30px;
-}
+}*/
 .search-div {
     display: flex;
     gap: 20px;
