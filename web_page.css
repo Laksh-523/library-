@@ -74,7 +74,13 @@ nav a {
 nav a:hover {
     color:#77A6C0; 
 }
-
+.logo-container {
+    display: flex;
+    justify-content: flex-start; 
+    width: 100%;
+    margin: 0; /* Margin okkoma 0 lines kala */
+    padding: 0;
+}
 
 .library{
     height: 600px;
