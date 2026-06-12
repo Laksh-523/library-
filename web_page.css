@@ -335,15 +335,20 @@ table{
 }
 
 .reg{
-    display:inline-block;
-    text-decoration:none;
-    background:#073A69; 
-    color:#B4B6B8;
-    padding:18px 40px;
-    border-radius:10px;
-    font-size:20px;
-    font-weight:bold;
-    transition:0.3s;
+    background-color: #2b579a;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;           
 }
 
 .reg:hover{
