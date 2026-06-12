@@ -1,5 +1,5 @@
 body{
-    background-color:#FDF6E2; /*ivory*/
+    background-color:#B4B6B8; /*ivory*/
   
    
 }
@@ -8,7 +8,7 @@ body{
 
 
  h1 {
-    background-color:#160F0A;  /*espresso*/
+    background-color:#171725;  /*espresso*/
     color:#E6D3B3;  /*beige*/
     font-family: sans-serif;
     font-size:60px;
@@ -17,7 +17,7 @@ body{
 } 
 
 nav {
-    background-color:#20140D; /*chocolate*/
+    background-color:#073A69; /*chocolate*/
     padding:10px;
     position:sticky;
     display:flex;
@@ -26,7 +26,7 @@ nav {
 }
 
 nav a {
-    color:#CDB286;  /*sand*/
+    color:#B4B6B8;  /*sand*/
     text-decoration:none;
     font-weight:bold;
     margin-left:40px;
@@ -34,7 +34,7 @@ nav a {
 }
 
 nav a:hover {
-    color:#A8763E;  /*camel*/
+    color:#77A6C0;  /*camel*/
 }
 
 
