@@ -23,14 +23,14 @@ body{
 
 
  h1 {
-    background-color:#171725;  
+    background-color:#073A69;  
     padding:15px;
     margin:0;
 	line-height:1.2;
 } 
 
 nav {
-    background-color:#073A69;
+    background-color:#5A94C1;
     padding:8px;
     position:sticky;
     display:flex;
@@ -246,7 +246,7 @@ table{
 }
 
 .Rtable tr:hover{
-    background:#77A6C0;  
+    background:#B4B6B8;  
 }
 
 .steps{
@@ -312,7 +312,7 @@ table{
 
 .R&C{
     background:#77A6C0;
-    border-left:6px solid #171725;
+    border-left:6px solid #5A94C1;
     padding:30px;
     border-radius:12px;
     display:flex;
