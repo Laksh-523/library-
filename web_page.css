@@ -433,3 +433,125 @@ table{
 .social-links a:hover{
     color:#ffffff;
 }
+
+
+/*page 05*/
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color:;
+}
+
+/* Main Content Container */
+.main-content {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* සුදු පැහැති Section Blocks */
+.section-block {
+    background-color: #;
+    border: 1px solid #e1e4e6;
+    border-radius: 4px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* මාතෘකා (Section Headings) */
+.section-block h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid #34495e; /* මාතෘකාව යටින් ඇති තද රේඛාව */
+    padding-bottom: 10px;
+}
+
+/* Opening Hours Table සැකසුම */
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.hours-table td {
+    padding: 12px 0;
+    border-bottom: 1px solid #ededed;
+    font-size: 15px;
+}
+
+/* දකුණු පස ඇති වෙලාවන් දකුණට කිරීමට (Right align hours) */
+.hours-table td:last-child {
+    text-align: right;
+    font-weight: 500;
+}
+
+/* ඉරිදා සහ නිවාඩු දින රතු පැහැයෙන් දැක්වීමට */
+.hours-table .closed-day td {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Contact Details සැකසුම */
+.section-block p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+.section-block p strong {
+    color: #000;
+    display: inline-block;
+    width: 80px; /* පෙළ එක පෙළට තබා ගැනීමට */
+}
+
+/* Library Location & Media සැකසුම */
+.media-container {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.media-container h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.media-container iframe, 
+.media-container video {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+/* FAQ Accordion සැකසුම (අමතර කොටස සඳහා) */
+.faq-accordion {
+    margin-top: 15px;
+}
+
+.faq-item {
+    border: 1px solid #e1e4e6;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.faq-title {
+    background-color: #f8f9fa;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 1px solid #e1e4e6;
+}
+
+.faq-body {
+    padding: 15px;
+    background-color: #fff;
+    display: block; /* jQuery මගින් ක්‍රියා කිරීමට හෝ සාමාන්‍යයෙන් පෙනෙන්නට */
+}
