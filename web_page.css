@@ -508,3 +508,141 @@ table{
     background-color: #fff;
     display: block; /* jQuery මගින් ක්‍රියා කිරීමට හෝ සාමාන්‍යයෙන් පෙනෙන්නට */
 }
+
+
+
+/*ourservice*/
+
+/*for boxes*/
+.services-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+.services-left-banner {
+    background-color: #073A69;
+    width: 35%;
+    padding: 50px 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #ffffff;
+}
+
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-content h1 {
+    font-size: 40px;
+    font-weight:bold;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    color:#B4B6B8;
+}
+
+.banner-content p {
+    font-size: ;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 35px;
+}
+
+/*Button*/
+.explore-btn {
+    display: inline-block;
+    background-color: #B4B6B8; 
+    color: #073A69;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(244, 162, 97, 0.3);
+}
+
+.explore-btn:hover {
+    background-color: gold;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(244, 162, 97, 0.4);
+}
+
+/* 2right side gird */
+.services-right-grid {
+    width: 65%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-content: center;
+}
+
+
+.services-right-grid > div {
+    border-radius: 16px;
+    padding: 30px 25px;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+    cursor: pointer;
+    border:1px solid blue;
+    color:#171725;
+    background-color: #fffff2;
+}
+
+.services-right-grid > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.services-right-grid > div:hover i {
+    color: #000000;
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .services-container {
+        flex-direction: column;
+    }
+    .services-left-banner {
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+    }
+    .services-right-grid {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr); */
+        padding: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-right-grid {
+        grid-template-columns: 1fr; 
+        padding: 25px;
+    }
+}
