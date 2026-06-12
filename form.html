@@ -197,7 +197,7 @@
         
         if (isValid) {
             alert("Successfully Reserved.");
-            this.submit(); // Form eka submit karanna puluwan dan
+            this.submit(); 
         } else {
             alert("Reservation failed. Please check the errors.");
         }
@@ -224,7 +224,7 @@
             displayElement.style.color = "black";
         } else if (daysRemaining === 0) {
             displayElement.innerHTML = "Today is the deadline to return the book!";
-            displayElement.style.color = "orange";
+            displayElement.style.color = "red";
         } else {
             displayElement.innerHTML = "The return date for the book has expired!";
             displayElement.style.color = "red";
