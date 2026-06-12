@@ -75,31 +75,33 @@
     font-size:7px;
 	color:white;
 }
-.image-text{
-	z-index:5;
-	text-align:center;
-	color:#f7fafc;
-	top:50%;
-	left:50%;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	width:80%;
-}
-.image-text h3 {
-    font-size: 48px;
-    font-weight: bold;
-	color: #FFD700;  
-    margin-bottom: 20px;
-	text-shadow: 2px 2px 4px #000; /* black shadow around text */
-	-webkit-text-stroke: 1px #000;	/* black border around letters */
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-}
+.image-text {
+    z-index: 5;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 80%;
 }
 
+/* Heading */
+.image-text h3 {
+    font-size: 48px;              /* big & clear */
+    font-weight: bold;            /* strong emphasis */
+    color: #FFD700;               /* gold highlight */
+    -webkit-text-stroke: 2px #000;/* black border outline */
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* soft glow */
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
 .image-text p {
-    font-size: 20px;
-    line-height: 1.6;
-	color: #E0E0E0;
+    font-size: 20px;              /* readable size */
+    line-height: 1.6;             /* spacing for clarity */
+    color: #E0E0E0;               /* light gray text */
+    -webkit-text-stroke: 1px #000;/* thin outline */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* subtle shadow */
 }
 
 </style> 
