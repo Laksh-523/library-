@@ -9,6 +9,7 @@ section h2 {
    align-items: center;
    width: 100%; 
     gap: 10px;
+    margin-bottom: 20px;         /* spacing below search bar */
    
 }
 .catlog-div input{
@@ -17,15 +18,21 @@ section h2 {
     border-radius: 4px;
     width: 250px;
 }
+.search-div input {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 220px;                /* slightly shorter */
+}
 .search-btn {
     padding: 8px 15px;
     border: none;   
     background-color: #2b6cb0;
     color: white;     
     border-radius: 4px;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
+
 .categories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -33,7 +40,7 @@ section h2 {
        Each card stays at a minimum of 220px and grows to fill remaining space (1fr) */
     gap: 20px;
     margin-bottom: 5px;
-    justify-content: end;  /* Align grid items to right side */
+    justify-content: center;  /* center images neatly */
 }
 .category {
         border-radius: 6px;
@@ -49,8 +56,8 @@ section h2 {
     background: #f7fafc; /* light background highlight */
 }
 .category img {
-    width: 80%;
-    height:300px;
+    width: 70%;
+    height:250px;
     object-fit: cover;  /* Critical: Clips/crops image to fit box without stretching or distortion */
     border-radius: 4px;
     margin-bottom: 10px;
