@@ -3,6 +3,7 @@
     text-align:right;
     gap: 20px;
     display:flex;
+    justify-content:flex-end;
 }
 .catlog-div input{
     padding: 8px 15px;
