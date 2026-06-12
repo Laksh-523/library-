@@ -53,7 +53,7 @@ nav {
 /* Links තියෙන මුළු තීරුවම දකුණට තල්ලු කරන්නේ මෙතනින් */
 .nav-links {
     display: flex;
-    justify-content: flex-end; /* 👈 'text-align: right' වෙනුවට මේක දාන්න */
+    justify-content: flex-end; 
     width: 100%;
     margin-top: 5px;
 }
@@ -63,7 +63,7 @@ nav {
     color: #B4B6B8;  
     text-decoration: none;
     font-weight: bold;
-    margin-left: 40px; /* 👈 එක ලින්ක් එකක් සහ තව ලින්ක් එකක් අතර ඉඩ */
+    margin-left: 40px; 
 }
 
 
