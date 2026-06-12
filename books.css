@@ -1,7 +1,9 @@
 
 .search-div {
     display:flex;
-   item-align:right;
+     justify-content: flex-end;
+   align-items: center;        
+    gap: 10px;                  
 }
 .catlog-div input{
     padding: 8px 15px;
