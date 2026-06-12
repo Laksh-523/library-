@@ -1,4 +1,8 @@
-
+section h2 {
+    text-align: right;     /* Move heading to right side */
+    margin-right: 15px;    /* Add spacing from right edge */
+    margin-left: 0;        /* Remove left margin */
+}
 .search-div {
     display:flex;
      justify-content: flex-end;
