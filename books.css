@@ -1,3 +1,6 @@
+body{
+    padding: 15px;
+}
 .search-div {
     display:flex;
      justify-content: flex-end;
