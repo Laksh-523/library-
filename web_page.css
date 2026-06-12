@@ -40,8 +40,6 @@ nav {
 	margin:0;
     padding:15px 30px;
     position:fixed;
-    display:flex;
-    justify-content:space-between;
 	top:0;
 	left:0;
 	width:100%;
