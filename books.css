@@ -30,6 +30,9 @@ body{
     border-radius: 4px;
     cursor: pointer;   
 }
+.search-btn:hover {
+    background-color: #1a3c6d; 
+}
 
 .categories-grid {
     display: grid;
@@ -80,6 +83,9 @@ body{
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 20px;
+}
+.browsing-btn:hover {
+    background-color: #1a3c6d; 
 }
 .Browsing img {
     width: 120px;
