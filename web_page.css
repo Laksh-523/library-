@@ -29,7 +29,11 @@ body{
 	color:white;
 }
 
-
+._pt{
+	background-color:#001F8F;
+	margin:0;
+	padding:10px;
+}
 nav {
     background-color:#171725;
 	margin:0;
