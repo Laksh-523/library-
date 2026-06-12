@@ -99,7 +99,7 @@ nav a:active {
     /*margin-top:10vh;*/
     max-width: 600px; 
     margin: 40px auto;
-    padding: 30px;
+    padding-top: 100px;
 } 
 
 .form-container label {
