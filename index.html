@@ -15,6 +15,7 @@
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 	filter: brightness(40%);
+	 possition:relative;
 }
 .image1 img{
     width:100%;
@@ -74,6 +75,10 @@
     font-size:7px;
 	color:white;
 }
+.image-text{
+	z-index:5;
+	text-align:center;
+}
 
 </style> 
 </head>
@@ -115,14 +120,14 @@ function changeImage() {
 
 setInterval(changeImage, 2000);
 </script>
-
+		<div class="image-text">
             <h3>    Welcome to PageTurners</h3>
             <br>
             <p>
         A modern library management system designed to streamline book<br> borrowing,
          manage inventory, and <br>provide an effortless way to access library resources.
          </p>
-
+		</div>
 
     <div class="allBox">
         <div class="boxes">
