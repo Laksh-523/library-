@@ -403,14 +403,13 @@ table{
     color:;
 }
 
-/* Main Content Container */
+
 .main-content {
     max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-/* සුදු පැහැති Section Blocks */
 .section-block {
     background-color: #;
     border: 1px solid #e1e4e6;
@@ -420,18 +419,18 @@ table{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* මාතෘකා (Section Headings) */
+
 .section-block h2 {
     color: #2c3e50;
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 22px;
     font-weight: bold;
-    border-bottom: 2px solid #34495e; /* මාතෘකාව යටින් ඇති තද රේඛාව */
+    border-bottom: 2px solid #34495e;
     padding-bottom: 10px;
 }
 
-/* Opening Hours Table සැකසුම */
+
 .hours-table {
     width: 100%;
     border-collapse: collapse;
@@ -444,19 +443,19 @@ table{
     font-size: 15px;
 }
 
-/* දකුණු පස ඇති වෙලාවන් දකුණට කිරීමට (Right align hours) */
+
 .hours-table td:last-child {
     text-align: right;
     font-weight: 500;
 }
 
-/* ඉරිදා සහ නිවාඩු දින රතු පැහැයෙන් දැක්වීමට */
+
 .hours-table .closed-day td {
     color: #e74c3c;
     font-weight: bold;
 }
 
-/* Contact Details සැකසුම */
+
 .section-block p {
     font-size: 15px;
     line-height: 1.6;
@@ -466,10 +465,10 @@ table{
 .section-block p strong {
     color: #000;
     display: inline-block;
-    width: 80px; /* පෙළ එක පෙළට තබා ගැනීමට */
+    width: 80px; 
 }
 
-/* Library Location & Media සැකසුම */
+/* Library Location & Media */
 .media-container {
     margin-top: 20px;
     margin-bottom: 25px;
@@ -489,7 +488,7 @@ table{
     box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
-/* FAQ Accordion සැකසුම (අමතර කොටස සඳහා) */
+/* FAQ Accordion */
 .faq-accordion {
     margin-top: 15px;
 }
@@ -512,7 +511,7 @@ table{
 .faq-body {
     padding: 15px;
     background-color: #fff;
-    display: block; /* jQuery මගින් ක්‍රියා කිරීමට හෝ සාමාන්‍යයෙන් පෙනෙන්නට */
+    display: block; /*for  jQuery  */
 }
 
 
