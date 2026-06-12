@@ -116,6 +116,8 @@ label{
 
 input{
     width:100%;
+	padding-right:10px;
+	padding-left:10px;
     padding:10px;
     box-sizing:border-box;
     
@@ -126,15 +128,15 @@ form{
 }
 
 input , select {
-    border:1px solid #073A69;  /*caramel*/
+    border:1px solid navyblue;  /*caramel*/
     border-radius:7px;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
 }
 
 input:focus , select:focus{
-    border-color:#B4B6B8; /*chestnut*/
-    background-color:#B4B6B8;
+    border-color:navyblue; /*chestnut*/
+    background-color:#F4F6F7;
     outline:none;
     box-shadow: 0 0 5px rgba(143, 83, 29, 0.5);
 }
