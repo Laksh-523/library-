@@ -1,7 +1,6 @@
 
 .search-div {
     text-align:right;
-    gap: 20px;
     display:flex;
     justify-content:flex-end;
 }
