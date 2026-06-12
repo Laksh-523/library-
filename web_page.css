@@ -37,7 +37,7 @@ nav a:hover {
     color:#77A6C0;  /*camel*/
 }
 .library{
-    height: 600px;
+    height: auto;
 	width: 100%;
 }
 
