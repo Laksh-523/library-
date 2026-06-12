@@ -592,7 +592,7 @@ table{
     padding: 30px 25px;
     transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
     cursor: pointer;
-    border:1px solid blue;
+    border:1px solid #171725;
     color:#171725;
     background-color: #fffff2;
 }
