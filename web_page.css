@@ -602,15 +602,15 @@ table{
 }
 
 .banner-content h1 {
-    font-size: 40px;
+    font-size: 45px;
     font-weight:bold;
     margin-bottom: 20px;
-    letter-spacing: 0.5px;
-    color:#B4B6B8;
+    letter-spacing: 0.7px;
+    color:#fff;
 }
 
 .banner-content p {
-    font-size: ;
+    font-size:30px ;
     line-height: 1.6;
     color: #cbd5e1;
     margin-bottom: 35px;
@@ -625,7 +625,7 @@ table{
     padding: 12px 28px;
     border-radius: 30px;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size:23px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(244, 162, 97, 0.3);
 }
