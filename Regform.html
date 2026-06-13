@@ -23,7 +23,8 @@
         
         </div>
     </nav>
-
+<div class="dt">
+	</div>
 <div class="registration">
 <div class="head"></div>
     <h1 class="title">Registration</h1>
@@ -122,7 +123,10 @@
 
 </div>
 
-	<script>
+<script>
+	let Date = new Date();
+	document.getElementById("dt").textContent=Date;
+		
    function showMsg(event) {
     // Form එක Submit වෙන එක තාවකාලිකව නතර කරනවා
     event.preventDefault(); 
