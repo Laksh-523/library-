@@ -187,17 +187,6 @@ h4.data-reserve {
     margin-top:40px;
     flex-wrap:wrap;
 }
-
-.news{
-    width:80%;
-    margin:auto;
-}
-
-.news h2{
-    color:#A8763E; /*camel*/
-    font-weight:bold;
-}
-
 .news-item{
     border-left:5px solid #160F0A; /*espresso*/
     padding:15px;
