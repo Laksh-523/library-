@@ -76,8 +76,8 @@ nav a.active {
 }
 
 nav a.active::after {
-    content: "•";
-    color: #55A94C;
+   content: "";
+    position: absolute;
 }
 
 .logo-container {
@@ -183,7 +183,7 @@ h4.data-reserve {
 .allBox{
     display:flex;
     justify-content:center;
-    gap:20px;
+    gap:40px;
     margin-top:40px;
     flex-wrap:wrap;
 }
@@ -264,10 +264,14 @@ table{
     text-align:center;
     color:#073A69; 
     border-radius:15px;
-    box-shadow: 0 10px 10px navy;
 	gap:40px;
     transition:0.4s ease;
     cursor:pointer;
+	 margin-bottom:15px;
+    font-size:28px;
+
+	 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), 
+                        0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .boxes:hover{
