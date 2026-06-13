@@ -1,0 +1,179 @@
+
+ body {
+    padding-top: 15px;
+    margin: 0;
+}
+/* --- Hero Slider Layout --- */
+.image1 {
+    width: 100%;
+    height: 650px; 
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.image1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55); /* Dark overlay */
+    z-index: 1;
+}
+
+.image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-text {
+    z-index: 5;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 85%;
+}
+
+.image-text h3 {
+    font-size: 56px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.image-text p {
+    font-size: 22px;
+    line-height: 1.6;  
+    color: #f1f1f1;
+    font-weight: 400;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* --- Features 3-Boxes Layout --- */
+.allBox {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    padding: 0 20px;
+}
+
+.boxes {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 30px 25px;
+    border: 1px solid #eef2f5;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.boxes:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(5, 1, 16, 0.15);
+   
+}
+
+.box-icon {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.boxes h3 {
+    font-size: 20px;
+    color: #0c145e;
+    font-weight: 700;
+}
+
+.boxes p {
+    font-size: 14px;
+    color: #272121;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- Newsletter Banner --- */
+.head2 {
+    text-align: center;
+    color: white;
+    background-color: #04043c;
+    padding: 25px;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* --- News Section --- */
+.news {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.news h2 {
+    color: #0c145e;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.news-item {
+    padding: 20px;
+    margin: 20px 0;
+    background: #f8f9fa;
+    border-left: 5px solid #0c145e;
+    border-radius: 12px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.news-item h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.news-item p {
+    color: #555;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* --- Mobile View Adjustments --- */
+@media (max-width: 768px) {
+    .image1 {
+        height: 450px;
+    }
+    .image-text h3 {
+        font-size: 32px;
+    }
+    .image-text p {
+        font-size: 16px;
+    }
+    .allBox {
+        gap: 20px;
+    }
+    .news {
+        width: 90%;
+    }
+}

@@ -19,6 +19,8 @@ $(document).ready(function() {
 
 
 //form
+
+
     document.getElementById('reservationForm2').addEventListener('submit', function(event) {
         event.preventDefault(); 
 
@@ -155,3 +157,9 @@ $(document).ready(function() {
             displayElement.style.color = "red";
         }
     }
+
+
+       
+    
+
+    

@@ -1,134 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Page Turners</title>
-    <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--for footer icons-->
-	
+    <title>Library Contact Page</title>
     <link rel="stylesheet" href="web_page.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--for footer icons-->
+    
+    <!--bootstrap@5.3.8-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="web.js"></script>
+    
 </head>
 <body>
-
-  <nav>
-		    <div class="logo-container">
-   			 <h1><span class="logo">PT</span>  <span class="logo1">PageTurners</span> </h1>
-			</div>
-     		<div class="nav-link">
+    <!--bootstrap@5.3.8-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	
+    
+    <nav>
+        <div class="logo-container">
+            <h1>
+                <span class="logo">PT</span>
+                <span class="logo1">PageTurners</span>
+            </h1>
+        </div>
+        <div class="custom-nav-links">
             <a href="index.html">HOME</a>
             <a href="books.html">CATALOG</a>
-            <a href="registration.html" class="active">REGISTRATION</a>
+            <a href="registration.html">REGISTRATION</a>
             <a href="form.html">RESERVE</a>
-		    <a href="ourservice.html">OURSERVICE</a>
+            <a href="ourservice.html" class="active">OURSERVICE</a>
             <a href="contact.html">CONTACT</a>
-        
         </div>
     </nav>
 
-    <section class="services-container">
-        
-        <div class="services-left-banner">
-            <div class="banner-content">
-                <h1>Our Services</h1>
-                <p>Explore our wide range of academic and digital services designed to streamline your learning experience and resource access.</p>
-                <a href="#" class="explore-btn">Explore All Services</a>
-            </div>
-        </div>
-
-
-        <div class="services-right-grid">
+    <div class="page-wrapper">
+        <section class="services-container">
             
-            <!-- Card 1: Book Borrowing -->
-            <div class="card_1">
-                <div class="card-icon_1">
-                    <i class="fa-solid fa-book-open"></i>
+            <div class="services-left-banner">
+                <div class="banner-content">
+                    <h1>Our Services</h1>
+                    <p>Explore our wide range of academic and digital services designed to streamline your learning experience and resource access.</p>
+                    <a href="#" class="explore-btn">Explore All Services</a>
                 </div>
-                <h3>Book Borrowing</h3>
-                <p>Easily borrow, renew, and track physical books from our extensive university library catalog.</p>
             </div>
 
-            <!-- Card 2: Digital Library -->
-            <div class="card_2">
-                <div class="card-icon_2">
-                    <i class="fa-solid fa-desktop"></i> 
+            <div class="services-right-grid">
+                
+                <div class="service-card">
+                    <div class="card-icon card-icon-1">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Book Borrowing</h3>
+                    <p>Easily borrow, renew, and track physical books from our extensive university library catalog.</p>
                 </div>
-                <h3>Digital Library</h3>
-                <p>Access computing resources, past papers, and university institutional repositories online.</p>
-            </div>
 
-            <!-- Card 3: Research Support -->
-            <div class="card_3">
-                <div class="card-icon_3">
-                    <i class="fa-solid fa-chart-pie"></i>
+                <div class="service-card">
+                    <div class="card-icon card-icon-2">
+                        <i class="fa-solid fa-desktop"></i> 
+                    </div>
+                    <h3>Digital Library</h3>
+                    <p>Access computing resources, past papers, and university institutional repositories online.</p>
                 </div>
-                <h3>Research Support</h3>
-                <p>Get professional guidance, reference tools, and citation assistance for your academic research.</p>
-            </div>
 
-            <!-- Card 4: Study Rooms -->
-            <div class="card_4">
-                <div class="card-icon_4">
-                    <i class="fa-solid fa-building-user"></i>
+                <div class="service-card">
+                    <div class="card-icon card-icon-3">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3>Research Support</h3>
+                    <p>Get professional guidance, reference tools, and citation assistance for your academic research.</p>
                 </div>
-                <h3>Study Rooms</h3>
-                <p>Reserve quiet, individual, or collaborative group study spaces equipped with modern facilities.</p>
-            </div>
 
-            <!-- Card 5: E-Books Access -->
-            <div class="card_5">
-                <div class="card_5">
-                    <i class="fa-solid fa-book-bookmark"></i>
+                <div class="service-card">
+                    <div class="card-icon card-icon-4">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <h3>Study Rooms</h3>
+                    <p>Reserve quiet, individual, or collaborative group study spaces equipped with modern facilities.</p>
                 </div>
-                <h3>E-Books Access</h3>
-                <p>Read thousands of digital textbooks and academic journals directly from your personal devices.</p>
-            </div>
 
-            <!-- Card 6: Academic Resources -->
-            <div class="card_6">
-                <div class="card-icon_6">
-                    <i class="fa-solid fa-graduation-cap"></i>
+                <div class="service-card">
+                    <div class="card-icon card-icon-5">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </div>
+                    <h3>E-Books Access</h3>
+                    <p>Read thousands of digital textbooks and academic journals directly from your personal devices.</p>
                 </div>
-                <h3>Academic Resources</h3>
-                <p>Access high-quality lecture notes, databases, and materials tailored for your degree program.</p>
-            </div>
 
+                <div class="service-card">
+                    <div class="card-icon card-icon-6">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3>Academic Resources</h3>
+                    <p>Access high-quality lecture notes, databases, and materials tailored for your degree program.</p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <div class="footer-contact">
+            <p>📧 pageturners@gmail.com</p>
+            <p>📞 +94 11 234 5678</p>
+            <p>📍 <a href="https://maps.app.goo.gl/2VAJ7m4vrbdovsPM9?g_st=aw">123, Library Road, Colombo, Sri Lanka</a></p>
         </div>
-    </section>
-
-	 <div class="footer">
-
-         <div class="footer-contact">
-             <p>📧 pageturners@gmail.com</p>
-             <p>📞 +94 11 234 5678</p>
-            <p>📍 <a href="https://maps.app.goo.gl/2VAJ7m4vrbdovsPM9?g_st=aw">
-                 123, Library Road, Colombo, Sri Lanka
-                </a>
-                </p>
-</div>
 
         <div class="social-links">
-    <a href="https://www.facebook.com/yourpage" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
-
-    <a href="https://www.instagram.com/yourpage" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-
-    <a href="https://www.youtube.com/@yourchannel" target="_blank">
-        <i class="fa-brands fa-youtube"></i>
-    </a>
-</div>
-
-        <p>&copy; 2026 City Library. All Rights Reserved.</p>
+            <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@yourchannel" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2026 City Library. All Rights Reserved. <br>
+            <span id="footer-date"></span></p>
+        
     
 
 </div>
 
+        <script>
+        document.getElementById("footer-date").innerHTML = new Date().toLocaleDateString('en-US',{
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'});
+            </script>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="web.js"></script>
 </body>
 </html>

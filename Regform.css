@@ -67,9 +67,18 @@ img {
     margin-bottom: 30px;
 }
 
-input {
-    display: flex;
-    justify-content: center; 
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    min-width: 0;
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    color: #555;
 }
 
 
@@ -118,6 +127,11 @@ input:focus, select:focus {
 
 .inputWithSelect select {
     width: 80px;
+}
+
+.inputWithSelect input {
+    flex: 1;
+    min-width: 0;
 }
 
 
