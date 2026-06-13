@@ -134,12 +134,12 @@ input:focus, select:focus {
 .termsContent {
     display: flex;
     align-items: center;
+    justify-content:center;
     gap: 10px;
 }
 
 .termsContent label {
     font-size: 14px;
     color: #666;
-    white-space: nowrap;
 }
 
