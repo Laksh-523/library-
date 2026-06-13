@@ -146,3 +146,11 @@ input:focus, select:focus {
     width: auto;
     margin: 0; 
 }
+
+small {
+    color: red;
+    font-size: 12px; 
+    display: block;
+    margin-top: 5px; 
+    font-weight: bold; 
+}

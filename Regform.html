@@ -23,12 +23,11 @@
         
         </div>
     </nav>
-<div class="dt">
-	</div>
+
 <div class="registration">
 <div class="head"></div>
     <h1 class="title">Registration</h1>
-    <form class="form-grid" action="#" onsubmit="showMsg(event);">
+    <form id="regForm" class="form-grid" action="#" onsubmit="showMsg(event);">
         
         <div class="regform">
             
@@ -40,39 +39,47 @@
                         <option value="Ms">Ms</option>
                         <option value="Mrs">Mrs</option>
                     </select>
-                    <input type="text" id="firstName" placeholder="First Name">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    <small></small>
                 </div>
             </div>
 
             <div class="formGroup">
                 <label for="lastName">Last Name</label>
                 <input type="text" id="lastName" placeholder="Last Name">
+                <small></small>
             </div>
 			<div class="formGroup">
                 <label for="username">Username</label>
                 <input type="text" id="username" placeholder="User Name">
+                <small></small>
             </div>
             
 			<div class="formGroup">
                 <label for="dob">Date of Birth</label>
                 <input type="text" id="dob" placeholder="Date Of Birth">
+                <small></small>
             </div>
             <div class="formGroup">
                 <label for="mobileNumber">Mobile Number</label>
                 <input type="tel" id="mobileNumber" placeholder="Phone Number">
+                <small></small>
             </div>
 
             <div class="formGroup">
-                <label for="emailId">Email ID</label>
-                <input type="email" id="emailId" placeholder="Example@Gmail.com">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email Address">
+                <small></small>
             </div>
 			<div class="formGroup">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <small></small>
             </div>
             <div class="formGroup">
-                <label for="confirmPassword">Confirm Password</span></label>
-                <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                <small></small>
             </div>
 
         </div>
@@ -123,37 +130,6 @@
 
 </div>
 
-<script>
-	let Date = new Date();
-	document.getElementById("dt").textContent=Date;
-		
-   function showMsg(event) {
-    
-    event.preventDefault(); 
-    let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirmPassword").value;
-
-    let errorText = document.getElementById("pwdError");
-    if (!errorText) {
-        errorText = document.createElement("span");
-        errorText.id = "pwdError";
-        errorText.style.color = "red";
-        errorText.style.fontSize = "12px";  
-        errorText.style.display = "block";
-        errorText.style.marginTop = "5px";
-        document.getElementById("confirmPassword").parentNode.appendChild(errorText);
-    }
-    if (password !== confirmPassword) {
-   
-        errorText.innerText = "Passwords do not match!";
-    } else {
-        errorText.innerText = "";
-        
-        alert("Application submitted successfully!\n\nPlease visit the library front desk with your ID card to complete your registration.");
-        window.location.href = "index.html";
-    }
-}
-    
-</script>
+<script src="registration.js"  ></script>
 </body>
 </html>
