@@ -128,34 +128,27 @@
 	document.getElementById("dt").textContent=Date;
 		
    function showMsg(event) {
-    // Form එක Submit වෙන එක තාවකාලිකව නතර කරනවා
+    
     event.preventDefault(); 
-
-    // Password සහ Confirm Password වල අගයන් ලබා ගැනීම
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirmPassword").value;
 
-    // Error එක පෙන්වන්න තැනක් (span) සාදා ගැනීම (කලින් සාදා නැත්නම් පමණක්)
     let errorText = document.getElementById("pwdError");
     if (!errorText) {
         errorText = document.createElement("span");
         errorText.id = "pwdError";
-        errorText.style.color = "red";       // රතු පාටින්
-        errorText.style.fontSize = "12px";   // කුඩා අකුරින්
+        errorText.style.color = "red";
+        errorText.style.fontSize = "12px";  
         errorText.style.display = "block";
         errorText.style.marginTop = "5px";
         document.getElementById("confirmPassword").parentNode.appendChild(errorText);
     }
-
-    // Passwords දෙක සමානදැයි පරීක්ෂා කිරීම
     if (password !== confirmPassword) {
-        // සමාන නැත්නම් Error message එක පෙන්වනවා
+   
         errorText.innerText = "Passwords do not match!";
     } else {
-        // සමාන නම් Error message එක මකා දමනවා
         errorText.innerText = "";
         
-        // Passwords සමාන නම් පමණක් ඔබේ පරණ Alert එක පෙන්වා ඊළඟ පිටුවට යනවා
         alert("Application submitted successfully!\n\nPlease visit the library front desk with your ID card to complete your registration.");
         window.location.href = "index.html";
     }
