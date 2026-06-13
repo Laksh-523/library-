@@ -140,5 +140,6 @@ input:focus, select:focus {
 .termsContent label {
     font-size: 14px;
     color: #666;
+    white-space: nowrap;
 }
 
