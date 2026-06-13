@@ -269,6 +269,8 @@ table{
     cursor:pointer;
 	 margin-bottom:15px;
     font-size:28px;
+	 margin-bottom:15px;
+    font-size:28px;
 
 	 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), 
                         0 4px 12px rgba(0, 0, 0, 0.04);
@@ -279,10 +281,6 @@ table{
     box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
 
-.boxes{
-    margin-bottom:15px;
-    font-size:28px;
-}
 
 .boxes p{
     color:#5A94C1; 
@@ -384,7 +382,7 @@ table{
 
 .footer{
     background-color:#171725;  
-    color:#B4B6B8; 
+    color:#E2E8F0; 
     text-align:center;
     padding:6px;
 }
@@ -394,7 +392,7 @@ table{
 }
 
 .social-links a{
-    color:#77A6C0;
+    color:#E2E8F0;
     font-size:30px;
     margin:0 15px;
     text-decoration:none;
@@ -556,7 +554,8 @@ table{
 	item-align:center;
 	margin:25px;
 	margin-left:100px;
-	margin-top:130px;
+	margin-top:150px;
+	margin-bottom:100px;
 
 }
 
