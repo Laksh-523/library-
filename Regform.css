@@ -142,4 +142,7 @@ input:focus, select:focus {
     font-size: 14px;
     color: #666;
 }
-
+#termsCheckbox {
+    width: auto;
+    margin: 0; 
+}
