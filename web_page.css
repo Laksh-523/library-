@@ -180,14 +180,6 @@ h4.data-reserve {
     flex-wrap:wrap;
 }
 
-.head2 {
-    background-color:blue; /*chestnut*/ ;
-    color:#E6D3B3; /*beige*/
-    font-weight:bold;
-    padding:30px;
-    font-size:50px;
-}
-
 .news{
     width:80%;
     margin:auto;
