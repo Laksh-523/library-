@@ -69,9 +69,17 @@ nav a:hover {
     color:#77A6C0; 
 }
 
-nav a:active {
-	color: #55A94C1;
+nav a.active {
+	color: white;
+	text-decoration:none;
+	
 }
+
+nav a.active::after {
+    content: "•";
+    color: #55A94C;
+}
+
 .logo-container {
     display: flex;
     justify-content: flex-start; 
