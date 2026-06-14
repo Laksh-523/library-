@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index.html</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--for footer icons-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--for footer icons-->
     <link rel="stylesheet" href="web_page.css">
     <link rel="stylesheet" href="index.css">
-   	<!--bootstrap@5.3.8-->
+   
+
+    <!--bootstrap@5.3.8-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
     <!--bootstrap@5.3.8-->
@@ -34,101 +38,124 @@
 
 	   <div class="image1">
 		 <img id="sliderImage" src="images/library.jpg" alt="Library Image">
-		<div class="image-text">
+		     <div class="image-text">
 			    <h3> Welcome to PageTurners</h3>
             <br>
-         	<p>
+         <p>
         	A modern library management system designed to streamline book<br> borrowing,
        	    manage inventory, and <br>provide an effortless way to access library resources.
-         	</p>
+         </p>
         </div>
 	</div>  
- 	<script>
-		const images = [
-    		"images/library.jpg",
-   			"images/library2.jpg"
-			];
-		let currentImage = 0;
-		function changeImage() {
-   	 		currentImage++;
-			if(currentImage >= images.length){
-    	currentImage = 0;
-    		}
-		document.getElementById("sliderImage").src = images[currentImage];
-			}
-	setInterval(changeImage, 2000);
-	</script>
+	<script>
+	const images = [
+    "images/library.jpg",
+    "images/library2.jpg"
+];
+
+let currentImage = 0;
+
+function changeImage() {
+    currentImage++;
+
+    if(currentImage >= images.length){
+        
+        currentImage = 0;
+    }
+
+    document.getElementById("sliderImage").src = images[currentImage];
+}
+
+setInterval(changeImage, 2000);
+</script>
 	
-	<div class="allBox">
+        
+
+
+    <div class="allBox">
         <div class="boxes">
-<!-- Box 1 -->
-    		<h3>📚<br>Vast Collection</h3>
+    
+            <h3>📚<br>Vast Collection</h3>
             <p>Thousands of books and digital resources at your fingertips.</p>
         </div>
 <!-- Box 2 -->
         <div class="boxes">
-        	<h3> 🕒24/7 Access</h3>
+        
+            <h3> 🕒24/7 Access</h3>
             <p>Browse, reserve, and read anytime, anywhere online.</p>
         </div>
 <!-- Box 3 -->
         <div class="boxes">
-     		<h3>🤫Quiet Study Zones</h3>
+     
+            <h3>🤫Quiet Study Zones</h3>
             <p>Peaceful physical spaces built for focused learning.</p>
         </div>
     </div>
- 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-	<br><br>
-	<h2 class="head2">PageTurners Newsletters</h2>
-	<br><br>
-	<section class="news">
-    	<h2>Latest News & Updates</h2>
-		<br><br>
-    	<div class="news-item">
-        	<h3>📚 Library News</h3>
-        	<p>500 new books have been added to the library collection.</p>
-   		</div>
-		<div class="news-item">
-       	 	<h3>📢 Announcement</h3>
-        	<p>The library will be closed on June 15 due to a public holiday.</p>
-    	</div>
-
-   	 	<div class="news-item">
-        	<h3>🎓 Event & Workshop</h3>
-        	<p>Digital Literacy Workshop will be held next Saturday.</p>
-    	</div>
-	</section>
-	<div class="footer">
- 		<div class="footer-contact">
-        	<p>📧 pageturners@gmail.com</p>
-            <p>📞 +94 11 234 5678</p>
-            <p>📍 <a href="https://maps.app.goo.gl/2VAJ7m4vrbdovsPM9?g_st=aw">
-                 123, Library Road, Colombo, Sri Lanka </a>
-                </p>
-		</div>
-		<div class="social-links">
-    		<a href="https://www.facebook.com/yourpage" target="_blank">
-        		<i class="fa-brands fa-facebook"></i>
-   		 	</a>
-			<a href="https://www.instagram.com/yourpage" target="_blank">
-       	 		<i class="fa-brands fa-instagram"></i>
-    		</a>
-			<a href="https://www.youtube.com/@yourchannel" target="_blank">
-        		<i class="fa-brands fa-youtube"></i>
-    		</a>
-		</div>
-		<p>&copy; 2026 City Library. All Rights Reserved. <br>
-        <span id="footer-date"></span></p>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<br><br>
+<h2 class="head2">PageTurners Newsletters</h2>
+<br><br>
+<section class="news">
+    <h2>Latest News & Updates</h2>
+<br><br>
+    <div class="news-item">
+        <h3>📚 Library News</h3>
+        <p>500 new books have been added to the library collection.</p>
     </div>
 
-    <script>
+    <div class="news-item">
+        <h3>📢 Announcement</h3>
+        <p>The library will be closed on June 15 due to a public holiday.</p>
+    </div>
+
+    <div class="news-item">
+        <h3>🎓 Event & Workshop</h3>
+        <p>Digital Literacy Workshop will be held next Saturday.</p>
+    </div>
+</section>
+</div>
+
+    <div class="footer">
+
+        <div class="footer-contact">
+             <p>📧 pageturners@gmail.com</p>
+             <p>📞 +94 11 234 5678</p>
+            <p>📍 <a href="https://maps.app.goo.gl/2VAJ7m4vrbdovsPM9?g_st=aw">
+                 123, Library Road, Colombo, Sri Lanka
+                </a>
+                </p>
+</div>
+
+        <div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/yourpage" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@yourchannel" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</div>
+
+        <p>&copy; 2026 City Library. All Rights Reserved. <br>
+            <span id="footer-date"></span></p>
+        
+    
+
+</div>
+
+        <script>
         document.getElementById("footer-date").innerHTML = new Date().toLocaleDateString('en-US',{
             month: 'long',
             day: 'numeric',
             year: 'numeric'});
-    </script>
+            </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="web.js"></script>
+   
 
 </body>
 </html>

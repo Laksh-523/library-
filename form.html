@@ -1,20 +1,38 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PageTurners</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--for footer icons-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--for footer icons-->
     <link rel="stylesheet" href="web_page.css">
+    
     <!--bootstrap@5.3.8-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="web.js"></script>
+    <style>
+        .error-msg {
+            color: rgb(226, 66, 66);
+            font-size: 15px; 
+            margin-top: 5px;
+            display: none; 
+        }
+        
+.invalid {
+     border: 1px solid  red;
+}
+
+    </style>
+    
+
 </head>
 <body>
     <!--bootstrap@5.3.8-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 	
-<!--nav-->
+        <!--nav-->
     <nav>
     <div class="logo-container">
         <h1>
@@ -75,170 +93,59 @@
             <span class="error-msg" id="dateError">Please select a reservation date</span><br><br>
             
             <input type="submit" value="Reserve Book" ><br><br>
-		</form>
+        </form>
     </div>
       
    <div class="form-container"><!-- data-reserve -->
         <h4 class="data-remain">Days Remaining.</h4> 
-        	<form action="#" id="reservationForm" method="POST">
-           	 	<label for="reservedDate">Reserved Date:</label><br>
-            	<input type="date" id="reservedDate" name="reserveDate" onchange="showReservedDate()">
-        	</form>
+        <form action="#" id="reservationForm" method="POST">
+            <label for="reservedDate">Reserved Date:</label><br>
+            <input type="date" id="reservedDate" name="reserveDate" onchange="showReservedDate()">
+        </form>
         <p id="daysCountDisplay" style="font-weight: bold; color: black;"></p>
     </div>
+<div class="footer">
 
-    <script>
-    document.getElementById('reservationForm2').addEventListener('submit', function(event) {
-        event.preventDefault(); 
-		let isValid = true;
-		const fullName = document.getElementById('fullName');
-        const memberId = document.getElementById('memberId');
-        const emailInput = document.getElementById('email');
-        const phone = document.getElementById('phone');
-        const category = document.getElementById('category');
-        const bookName = document.getElementById('bookName');
-        const terms = document.getElementById('terms');
-        const reserveDate = document.getElementById('reserveDate');
-
-        const nameError = document.getElementById('nameError');
-        const memberError = document.getElementById('memberError');
-        const emailError = document.getElementById('emailError');
-        const phoneError = document.getElementById('phoneError');
-        const categoryError = document.getElementById('categoryError');
-        const bookError = document.getElementById('bookError');
-        const termsError = document.getElementById('termsError');
-        const dateError = document.getElementById('dateError');
-
-        const errors = document.querySelectorAll('.error-msg');
-        errors.forEach(err => err.style.display = 'none');
-        const inputs = document.querySelectorAll('input, select');
-        inputs.forEach(input => input.classList.remove('invalid'));
-
-       if (fullName.value.trim() === "") {
-            nameError.style.display = 'block';
-            fullName.classList.add('invalid');
-            isValid = false;
-        }
-
-       if (memberId.value.trim() === "") {
-            memberError.style.display = 'block';
-            memberId.classList.add('invalid');
-            isValid = false;
-        }
-		const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (emailInput.value.trim() === "") {
-            emailError.textContent = "Please enter your email address";
-            emailError.style.display = 'block';
-            emailInput.classList.add('invalid');
-            isValid = false;
-        } else if (!emailPattern.test(emailInput.value)) {
-            emailError.textContent = "Invalid email format (e.g., name@email.com)";
-            emailError.style.display = 'block';
-            emailInput.classList.add('invalid');
-            isValid = false;
-        }
-		const phonePattern = /^\d{10}$/;
-        if (phone.value.trim() === "") {
-            phoneError.textContent = "Please enter your contact number";
-            phoneError.style.display = 'block';
-            phone.classList.add('invalid');
-            isValid = false;
-        } else if (!phonePattern.test(phone.value.trim())) {
-            phoneError.textContent = "Phone number must be exactly 10 digits";
-            phoneError.style.display = 'block';
-            phone.classList.add('invalid');
-            isValid = false;
-        }
-
-        if (category.value === "empty") {
-            categoryError.style.display = 'block';
-            category.classList.add('invalid');
-            isValid = false;
-        }
-
-       if (bookName.value.trim() === "") {
-            bookError.style.display = 'block';
-            bookName.classList.add('invalid');
-            isValid = false;
-        }
-
-        if (reserveDate.value === "") {
-            dateError.style.display = 'block';
-            reserveDate.classList.add('invalid');
-            isValid = false;
-        }
-
-        if (!terms.checked) {
-            termsError.style.display = 'block';
-            isValid = false;
-        }
-
-        if (isValid) {
-            alert("Successfully Reserved.");
-            this.submit(); 
-        } else {
-            alert("Reservation failed. Please check the errors.");
-        }
-    });
-     
-    function showReservedDate() {
-        let inputDateVal = document.getElementById("reservedDate").value;
-        	if (!inputDateVal) return; 
-		let reservationDate = new Date(inputDateVal);
-        let returnDeadline = new Date(reservationDate);
-        returnDeadline.setDate(reservationDate.getDate() + 14);
-
-        let today = new Date();
-        today.setHours(0, 0, 0, 0);
-        returnDeadline.setHours(0, 0, 0, 0);
-
-        let timeDifference = returnDeadline.getTime() - today.getTime();
-        let daysRemaining = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
-        let displayElement = document.getElementById("daysCountDisplay");
-
-        if (daysRemaining > 0) {
-            displayElement.innerHTML = "There are " + daysRemaining + " remaining days to return book.";
-            displayElement.style.color = "black";
-        } else if (daysRemaining === 0) {
-            displayElement.innerHTML = "Today is the deadline to return the book!";
-            displayElement.style.color = "red";
-        } else {
-            displayElement.innerHTML = "The return date for the book has expired!";
-            displayElement.style.color = "red";
-        }
-    }
-    </script>
-
-    <div class="footer">
-		<div class="footer-contact">
-            <p>📧 pageturners@gmail.com</p>
-            <p>📞 +94 11 234 5678</p>
+        <div class="footer-contact">
+             <p>📧 pageturners@gmail.com</p>
+             <p>📞 +94 11 234 5678</p>
             <p>📍 <a href="https://maps.app.goo.gl/2VAJ7m4vrbdovsPM9?g_st=aw">
-                 123, Library Road, Colombo, Sri Lanka  </a>
-            </p>
-	</div>
+                 123, Library Road, Colombo, Sri Lanka
+                </a>
+                </p>
+</div>
 
-    <div class="social-links">
-    	<a href="https://www.facebook.com/yourpage" target="_blank">
-        	<i class="fa-brands fa-facebook"></i>
-    	</a>
-		<a href="https://www.instagram.com/yourpage" target="_blank">
-        	<i class="fa-brands fa-instagram"></i>
-    	</a>
-		<a href="https://www.youtube.com/@yourchannel" target="_blank">
-        	<i class="fa-brands fa-youtube"></i>
-    	</a>
-	</div>
-	<p>&copy; 2026 City Library. All Rights Reserved. <br>
-        <span id="footer-date"></span></p>
-    </div>
-	<script>
+        <div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/yourpage" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@yourchannel" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</div>
+
+        <p>&copy; 2026 City Library. All Rights Reserved. <br>
+            <span id="footer-date"></span></p>
+        
+    
+
+</div>
+
+        <script>
         document.getElementById("footer-date").innerHTML = new Date().toLocaleDateString('en-US',{
             month: 'long',
             day: 'numeric',
             year: 'numeric'});
-    </script>
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="web.js"></script>
+            </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <script src="form.js"></script>
+
 </body>
 </html>
