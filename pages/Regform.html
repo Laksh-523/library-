@@ -100,7 +100,7 @@
 <div><img src="../assets/images/book2.jpg" alt="book" style="width: 80%;"></div>
 
 
-<div class="footer" style="width: 100%;">
+<div class="footer">
 
         <div class="footer-contact">
              <p>📧 pageturners@gmail.com</p>
@@ -125,11 +125,18 @@
     </a>
 </div>
 
-        <p>&copy; 2026 City Library. All Rights Reserved.</p>
+        <p>&copy; 2026 City Library. All Rights Reserved. <br>
+            <span id="footer-date"></span></p>
     
 
 </div>
 
 <script src="../assets/js/registration.js"  ></script>
+    <script>
+        document.getElementById("footer-date").innerHTML = new Date().toLocaleDateString('en-US',{
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'});
+    </script>
 </body>
 </html>

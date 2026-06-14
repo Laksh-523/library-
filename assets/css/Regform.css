@@ -8,7 +8,7 @@
 body {
     color: #333;
     background-color: #ffffff;
-    padding: 40px 20px;
+    padding: 40px 20px 0;
     display: flex;
     justify-content: center;
     flex-direction: column; 
@@ -166,4 +166,41 @@ small {
     display: block;
     margin-top: 5px; 
     font-weight: bold; 
+}
+
+.footer {
+    background-color: #171725;
+    color: #E2E8F0;
+    text-align: center;
+    padding: 5px 20px;
+    margin-top: 40px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-contact a {
+    color: #77A6C0;
+    text-decoration: none;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: #E2E8F0;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
 }

@@ -26,7 +26,7 @@
         </div>
     </nav>
 
-<div id="dt" style="float: right; margin-right: 50px; margin-top: 120px; color: #BE8400; border: 2px solid #DAA520 ; padding: 10px 15px; border-radius: 8px; background-color: white; font-weight: bold;"></div>
+<!-- <div id="dt" style="float: right; margin-right: 50px; margin-top: 120px; color: #BE8400; border: 2px solid #DAA520 ; padding: 10px 15px; border-radius: 8px; background-color: white; font-weight: bold;"></div> -->
 
     <div class="registration">
     <div class="paragraph">
@@ -122,10 +122,17 @@
     </a>
 </div>
 
-        <p>&copy; 2026 City Library. All Rights Reserved.</p>
+        <p>&copy; 2026 City Library. All Rights Reserved. <br>
+            <span id="footer-date"></span></p>
 
 
 </div>
     <script src="../assets/js/registration.js"  ></script>
+    <script>
+        document.getElementById("footer-date").innerHTML = new Date().toLocaleDateString('en-US',{
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'});
+    </script>
 </body>
 </html>
