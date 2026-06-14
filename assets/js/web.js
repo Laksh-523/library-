@@ -2,7 +2,7 @@
  function showMsg(event) {
         event.preventDefault();
         alert("Application submitted successfully!\n\nPlease visit the library front desk with your ID card to complete your registration.");
-        window.location.href = "index.html";
+    window.location.href = "../index.html";
     }
 
 

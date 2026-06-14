@@ -80,6 +80,6 @@ function showMsg(event) {
     if (fnValid && emailValid && pwValid && cpwValid && isPasswordMatched && termsChecked) {
         alert("Application submitted successfully!\n\nPlease visit the library front desk with your ID card to complete your registration.");
         
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
     }
 }
